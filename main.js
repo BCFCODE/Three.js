@@ -30,6 +30,8 @@ camera.position.z = 5;
 function animate() {
   requestAnimationFrame(animate);
   controls.update(); // Update controls each frame
+  cube.rotation.x += 0.01;
+  cube.rotation.y += 0.01;
   renderer.render(scene, camera);
 }
 animate();
